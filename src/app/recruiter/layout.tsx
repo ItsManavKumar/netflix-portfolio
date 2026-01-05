@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import PageCubeTransition from "@/components/PageCubeTransition";
 
 export default function RecruiterLayout({ children }: { children: ReactNode }) {
   return (
@@ -15,17 +16,27 @@ export default function RecruiterLayout({ children }: { children: ReactNode }) {
             </Link>
 
             <nav className="hidden gap-8 text-md text-white/70 sm:flex">
-              <Link href="/recruiter/skills" className="hover:text-white">Skills</Link>
-              <Link href="/recruiter/experience" className="hover:text-white">Experience</Link>
-              <Link href="/recruiter/projects" className="hover:text-white">Projects</Link>
-              <Link href="/recruiter/contact" className="hover:text-white">Hire me</Link>
+              <Link href="/recruiter/skills" className="hover:text-white">
+                Skills
+              </Link>
+              <Link href="/recruiter/experience" className="hover:text-white">
+                Experience
+              </Link>
+              <Link href="/recruiter/projects" className="hover:text-white">
+                Projects
+              </Link>
+              <Link href="/recruiter/contact" className="hover:text-white">
+                Hire me
+              </Link>
             </nav>
           </div>
         </div>
       </header>
 
       {/* push content below fixed header */}
-      <div className="">{children}</div>
+      <div className="pt-16">
+        <PageCubeTransition>{children}</PageCubeTransition>
+      </div>
     </main>
   );
 }
