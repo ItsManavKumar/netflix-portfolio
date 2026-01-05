@@ -11,7 +11,7 @@ export default function RecruiterLayout({ children }: { children: ReactNode }) {
               href="/"
               className="text-md font-semibold tracking-wide text-white/90 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
             >
-              ← Profiles
+              ←
             </Link>
 
             <nav className="hidden gap-8 text-md text-white/70 sm:flex">
