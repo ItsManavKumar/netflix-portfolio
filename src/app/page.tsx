@@ -13,7 +13,7 @@ export default function Landing() {
             <ProfileCard label="Recruiter" imageSrc="/posters/gojo.jpg" href="/recruiter" />
             <ProfileCard label="Developer" imageSrc="/posters/gon.jpg" objectPosition="object-[50%_80%]" href="/developer" />
             <ProfileCard label="Explorer" imageSrc="/posters/levi.jpg" objectPosition="object-[50%_80%]" href="/explorer" />
-            <ProfileCard label="Curious" imageSrc="/posters/sadaharu.jpg" objectPosition="object-[50%_20%]" href="/curious" />
+            <ProfileCard label="Curious" imageSrc="/posters/sadaharu.JPG" objectPosition="object-[50%_20%]" href="/curious" />
           </div>
         </div>
       </div>

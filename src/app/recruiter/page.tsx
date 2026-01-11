@@ -8,22 +8,22 @@ const recruiterShelves = [
       {
         label: "Skills",
         href: "/recruiter/skills",
-        bg: "/backdrops/IMG_6421.jpg",
+        bg: "/backdrops/IMG_6421.JPG",
       },
       {
         label: "Experience",
         href: "/recruiter/experience",
-        bg: "/backdrops/IMG_1629.jpg",
+        bg: "/backdrops/IMG_1629.JPG",
       },
       {
         label: "Journey",
         href: "/recruiter/journey",
-        bg: "/backdrops/IMG_1243.jpg",
+        bg: "/backdrops/IMG_1243.JPG",
       },
       {
         label: "Contact Me",
         href: "/recruiter/contact",
-        bg: "/backdrops/IMG_1920.jpg",
+        bg: "/backdrops/IMG_1920.JPG",
       },
     ],
   },
@@ -36,12 +36,12 @@ const recruiterShelves = [
       {
         label: "Lamp",
         href: "/recruiter/reading",
-        bg: "/backdrops/IMG_1243.jpg",
+        bg: "/backdrops/IMG_1243.JPG",
       },
       {
         label: "Schedule Maker",
         href: "/recruiter/movies",
-        bg: "/backdrops/IMG_1243.jpg",
+        bg: "/backdrops/IMG_1243.JPG",
       },
     ],
   },
