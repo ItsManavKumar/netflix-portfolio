@@ -156,7 +156,7 @@ export default function ContactPage() {
       { label: "Skills", href: "/recruiter/skills" },
       { label: "Journey", href: "/recruiter/journey" },
       { label: "Experience", href: "/recruiter/experience" },
-      { label: "Projects", href: "/recruiter/projects" },
+      { label: "Projects", href: "/recruiter/experience" },
     ].map((item) => (
       <div
         key={item.label}

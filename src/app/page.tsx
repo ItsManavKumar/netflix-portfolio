@@ -9,11 +9,29 @@ export default function Landing() {
             Who’s watching?
           </h1>
 
-          <div className="grid w-full max-w-4xl grid-cols-2 gap-4 sm:gap-6 md:grid-cols-4">
-            <ProfileCard label="Recruiter" imageSrc="/posters/gojo.jpg" href="/recruiter" />
-            <ProfileCard label="Developer" imageSrc="/posters/gon.jpg" objectPosition="object-[50%_80%]" href="/developer" />
-            <ProfileCard label="Explorer" imageSrc="/posters/levi.jpg" objectPosition="object-[50%_80%]" href="/explorer" />
-            <ProfileCard label="Curious" imageSrc="/posters/sadaharu.JPG" objectPosition="object-[50%_20%]" href="/curious" />
+          <div
+            className="
+              grid w-full max-w-4xl grid-cols-1 gap-6
+              sm:grid-cols-2 sm:gap-8
+              place-items-center
+            "
+          >
+            <div className="w-full max-w-[320px] sm:max-w-none">
+              <ProfileCard
+                label="Recruiter"
+                imageSrc="/posters/gojo.jpg"
+                href="/recruiter"
+              />
+            </div>
+
+            <div className="w-full max-w-[320px] sm:max-w-none">
+              <ProfileCard
+                label="Explorer?"
+                imageSrc="/posters/sadaharu.JPG"
+                objectPosition="object-[50%_20%]"
+                href="/explorer"
+              />
+            </div>
           </div>
         </div>
       </div>

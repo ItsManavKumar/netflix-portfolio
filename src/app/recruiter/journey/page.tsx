@@ -75,7 +75,7 @@ const journey: JourneyItem[] = [
   },
   {
   id: "webto",
-  year: "2024",
+  year: "2025",
   title: "Web.to — Dev.to Style Blogging Platform",
   subtitle: "Full-stack product build (Next.js)",
   description:
@@ -84,7 +84,7 @@ const journey: JourneyItem[] = [
 },
 {
   id: "lamp",
-  year: "2024",
+  year: "2025",
   title: "Long-Distance IoT Project",
   subtitle: "Real-time APIs + emotional UX",
   description:
@@ -93,7 +93,7 @@ const journey: JourneyItem[] = [
 },
 {
   id: "netflix-portfolio",
-  year: "2025",
+  year: "2026",
   title: "Netflix-Style Portfolio",
   subtitle: "Recruiter-first UX + product storytelling",
   description:

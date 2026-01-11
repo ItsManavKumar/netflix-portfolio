@@ -41,7 +41,7 @@ const recruiterShelves = [
       {
         label: "Schedule Maker",
         href: "/recruiter/movies",
-        bg: "/backdrops/IMG_1243.JPG",
+        bg: "/backdrops/IMG_2152.jpg",
       },
     ],
   },

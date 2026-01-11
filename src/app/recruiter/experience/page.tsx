@@ -72,7 +72,7 @@ export default function ExperiencePage() {
         ],
       },
       {
-        title: "Product & Engineering Experience",
+        title: "Projects",
         items: [
           {
             id: "devto",
@@ -99,7 +99,7 @@ export default function ExperiencePage() {
           },
           {
             id: "love-lamp",
-            title: "Love Lamp",
+            title: "Lamp API",
             subtitle: "IoT + Mobile app (LIFX API)",
             bg: "/backdrops/IMG_1243.JPG",
             badge: "Project",
@@ -114,7 +114,7 @@ export default function ExperiencePage() {
             id: "schedule-maker",
             title: "Schedule Maker",
             subtitle: "Roster automation + calendar export",
-            bg: "/backdrops/IMG_2152.jpg",
+            bg: "/explorer/ode.jpg",
             badge: "Project",
             highlights: [
               "Automated roster parsing from PDFs into structured shifts.",
