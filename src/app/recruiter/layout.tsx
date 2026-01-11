@@ -9,7 +9,7 @@ export default function RecruiterLayout({ children }: { children: ReactNode }) {
         <div className="bg-gradient-to-b from-black/80 via-black/40 to-transparent">
           <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
             <Link
-              href="/"
+              href="/recruiter"
               className="text-md font-semibold tracking-wide text-white/90 hover:text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
             >
               ←
@@ -34,7 +34,7 @@ export default function RecruiterLayout({ children }: { children: ReactNode }) {
       </header>
 
       {/* push content below fixed header */}
-      <div className="pt-16">
+      <div className="">
         <PageCubeTransition>{children}</PageCubeTransition>
       </div>
     </main>

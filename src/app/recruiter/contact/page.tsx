@@ -74,7 +74,7 @@ export default function ContactPage() {
           "
         >
           <a
-            href="mailto:YOUR_EMAIL_HERE?subject=Interview%20-%20Manav%20Kumar"
+            href="mailto:manav.kumar2108@gmail.com?subject=Interview%20-%20Manav%20Kumar"
             className="
               inline-flex items-center justify-center gap-2 rounded
               bg-white px-5 py-2.5 text-sm font-semibold text-black
