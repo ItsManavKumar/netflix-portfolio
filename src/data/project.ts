@@ -21,7 +21,7 @@ export const projects: Project[] = [
       "A full-stack blogging platform with infinite scrolling feeds, user profiles, and responsive UI.",
     tech: ["Next.js", "TypeScript", "Tailwind", "NextAuth", "React Query"],
     category: "Featured",
-    liveUrl: "https://your-live-link.com",
+    liveUrl: "https://blog-project-tau-eight.vercel.app/",
     githubUrl: "https://github.com/your-repo",
     poster: "/posters/blog.png",
     backdrop: "/backdrops/blog.jpg",

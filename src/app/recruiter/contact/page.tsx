@@ -47,7 +47,6 @@ export default function ContactPage() {
       <div className="relative z-10 p-6 sm:p-8 md:p-10">
         {/* metadata line */}
         <div className="text-xs sm:text-sm text-white/70">
-          <span className="text-green-400 font-semibold">98% Match</span>{" "}
           <span className="hidden sm:inline">•</span>{" "}
           <span className="block sm:inline">
             Frontend / Full-stack • Sydney / Melbourne • Open to interview
