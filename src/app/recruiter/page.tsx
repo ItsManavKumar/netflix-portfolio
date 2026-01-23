@@ -124,7 +124,7 @@ export default function RecruiterPage() {
                   <Link
                     key={item.label}
                     href={item.href}
-                    target="_blank"
+                    // target="_blank"
                     rel="noopener noreferrer"
                     className="
                     group relative flex
