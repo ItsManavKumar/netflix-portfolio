@@ -26,7 +26,7 @@ export default function Template({ children }: { children: ReactNode }) {
   return (
     <LazyMotion features={domAnimation}>
       <div className="relative min-h-screen overflow-x-hidden bg-black text-white">
-        <AnimatePresence mode="sync" initial={false}>
+        <AnimatePresence mode="popLayout" initial={false}>
           <m.div
             key={routeKey + defaultAnimation.name}
             initial="initial"
