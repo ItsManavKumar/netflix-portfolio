@@ -38,6 +38,7 @@ const recruiterShelves = [
       {
         label: "Lamp",
         href: "/recruiter/reading",
+        bg: "/posters/gojo.jpg"
       },
       {
         label: "Schedule Maker",

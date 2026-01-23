@@ -97,7 +97,8 @@ export default function ContactPage() {
           </a>
 
           <a
-            href="/resume.pdf"
+            href="../resume/resume-manav_kumar.pdf"
+            target ="_blank"
             className="
               inline-flex items-center justify-center gap-2 rounded
               bg-white/15 px-5 py-2.5 text-sm font-semibold text-white
