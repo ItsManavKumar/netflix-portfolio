@@ -3,9 +3,9 @@
 import { ReactNode } from "react";
 import { usePathname } from "next/navigation";
 import { LazyMotion, domAnimation, m } from "framer-motion";
-import { defaultAnimation } from "./lib/animations";
+import { defaultAnimation } from "../lib/animations";
 
-export default function Template({ children }: { children: ReactNode }) {
+export default function RecruiterTemplate({ children }: { children: ReactNode }) {
   const pathname = usePathname();
 
   return (
@@ -17,7 +17,7 @@ export default function Template({ children }: { children: ReactNode }) {
         exit="exit"
         variants={defaultAnimation.variants}
         transition={defaultAnimation.transition}
-        className="relative w-full min-h-screen overflow-hidden bg-black"
+        className="relative w-full overflow-hidden"
       >
         {children}
       </m.div>

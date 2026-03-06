@@ -8,8 +8,8 @@ type ExperienceItem = {
   id: string;
   title: string;
   subtitle?: string;
-  bg?: string; // e.g. "/backdrops/IMG_1243.JPG" (match exact casing)
-  badge?: string; // e.g. "Work", "Project"
+  bg?: string;
+  badge?: string;
   highlights: string[];
   tech?: string[];
   links?: { label: string; href: string }[];
@@ -27,47 +27,57 @@ export default function ExperiencePage() {
         title: "Professional Experience",
         items: [
           {
-            id: "uts",
-            title: "UTS Sydney",
-            subtitle: "Bachelor of Software Engineering (Honours)",
-            bg: "/backdrops/IMG_6421.JPG",
-            badge: "Education",
+            id: "colossal-bet",
+            title: "Colossal Bet",
+            subtitle: "Data Analyst Intern · May 2025 – Oct 2025",
+            bg: "/posters/colossal.jpg",
+            badge: "Internship",
             highlights: [
-              "Strong engineering foundation: software design, problem-solving, and team delivery.",
-              "Built projects in structured environments using version control and iterative development.",
-              "Developed systems thinking around building maintainable, scalable software.",
+              "Developed and maintained 10+ SQL scripts to automate daily betting transaction reports, reducing manual processing time by ~4 hours per week.",
+              "Built 2 interactive Tableau dashboards to track weekly wagering KPIs, enabling clear visibility into user activity across thousands of daily bets.",
+              "Performed user segmentation analysis to classify active vs inactive bettors, supporting targeted email campaigns to re-engage lapsed users.",
             ],
-            tech: ["Software Engineering", "Team Projects", "Git"],
-          },
-          {
-            id: "optus",
-            title: "Optus",
-            subtitle: "Customer Technology Specialist (Retail)",
-            bg: "/backdrops/IMG_1920.JPG",
-            badge: "Work",
-            highlights: [
-              "Troubleshot NBN, mobile, 5G, device setup, and connectivity issues in a high-pressure environment.",
-              "Worked with KPIs and customer outcomes — translating complex tech into clear, human explanations.",
-              "Built strong diagnostic habits: isolate variables, reproduce issues, test fixes, and confirm resolution.",
-            ],
-            tech: [
-              "Troubleshooting",
-              "Customer Communication",
-              "KPI-driven delivery",
-            ],
+            tech: ["SQL", "Tableau", "Data Analysis", "User Segmentation", "KPI Dashboards"],
           },
           {
             id: "evaheld",
             title: "Evaheld",
-            subtitle: "Internship - Front-End Developer",
-            bg: "/backdrops/IMG_6421.JPG",
+            subtitle: "Software Engineering Intern · Nov 2022 – Apr 2023",
+            bg: "/posters/evaheld.png",
             badge: "Internship",
             highlights: [
-              "Developed and constructed a highly functional homepage and improved the contact page, boosting it's performance.",
-              "Conducted 100+ usability tests on each independent page on website, designed 20+ reports showcasing UX/UI design issues, navigation bugs and improvement areas.",
+              "Built and launched homepage + contact page, reducing UI inconsistencies by 30%.",
+              "Completed 100+ QA/usability tests and produced 20+ reports highlighting UX/navigation issues.",
+              "Increased Lighthouse performance score by 20 points through asset and layout optimisation.",
+              "Implemented Stripe payment forms enabling safe online payments for future users.",
+            ],
+            tech: ["Next.js", "TypeScript", "Tailwind", "React", "Stripe"],
+          },
+          {
+            id: "optus",
+            title: "Optus",
+            subtitle: "Retail Associate · Jan 2024 – Present",
+            bg: "/posters/optus.webp",
+            badge: "Work",
+            highlights: [
+              "Ranked #1 for in-store sales consistently for 6 months, exceeding targets across mobile and NBN.",
+              "Maintained 95% monthly NPS and 90% 12-month average, resolving customer issues efficiently.",
+              "Troubleshot NBN, mobile, 5G, and device connectivity issues in a high-pressure retail environment.",
+            ],
+            tech: ["Customer Communication", "KPI-driven Delivery", "Troubleshooting"],
+          },
+          {
+            id: "uts",
+            title: "UTS Sydney",
+            subtitle: "Bachelor of Software Engineering (Honours) 2020-2023",
+            bg: "/posters/uts.png",
+            badge: "Education",
+            highlights: [
+              "Built strong foundations in software engineering, systems design, and collaborative delivery.",
+              "Shipped multiple frontend and data-focused projects in structured team environments.",
               "Developed systems thinking around building maintainable, scalable software.",
             ],
-            tech: ["Tailwind", "TypeScript", "NextJS", "React"],
+            tech: ["Software Engineering", "Data Analytics", "Git", "Team Projects"],
           },
         ],
       },
@@ -76,65 +86,110 @@ export default function ExperiencePage() {
         items: [
           {
             id: "devto",
-            title: "<Dev.to/>",
-            subtitle: "Full-stack content platform (clone)",
-            bg: "/backdrops/blog.png",
+            title: "Dev.to Clone",
+            subtitle: "Full-stack blogging platform · 2024",
+            bg: "/backdrops/dev.to_.png",
             badge: "Project",
             highlights: [
-              "Built a production-style web app with authentication, feeds, and user profiles.",
-              "Implemented modern data flows and UX patterns (infinite scroll, delete/edit, responsive UI).",
-              "Designed it like a real product: clean UI, scalable structure, deployment-ready.",
+              "Built a full-stack blogging platform with Google OAuth, user profiles, and CRUD posts.",
+              "Designed a relational PostgreSQL schema and implemented secure data operations using Prisma.",
+              "Implemented infinite scroll feed and caching to reduce repeat loading and improve UX speed.",
             ],
-            tech: ["Next.js", "TypeScript", "Prisma", "Postgres", "Auth"],
+            tech: ["Next.js", "TypeScript", "Tailwind", "React Query", "NextAuth", "Prisma", "PostgreSQL", "Vercel"],
             links: [
-              {
-                label: "Live",
-                href: "https://blog-project-tau-eight.vercel.app",
-              },
-              {
-                label: "GitHub",
-                href: "https://github.com/ItsManavKumar/blog_project",
-              },
+              { label: "Live", href: "https://blog-project-tau-eight.vercel.app" },
+              { label: "GitHub", href: "https://github.com/ItsManavKumar/blog_project" },
             ],
           },
           {
             id: "love-lamp",
-            title: "Lamp API",
-            subtitle: "IoT + Mobile app (LIFX API)",
-            bg: "/backdrops/IMG_1243.JPG",
+            title: "Lamp IoT App",
+            subtitle: "React Native + LIFX API · 2025",
+            bg: "/posters/lamp.jpg",
             badge: "Project",
             highlights: [
-              "Built a mobile experience that controls smart lights via an API (real-world hardware integration).",
-              "Designed interactions: color picker, brightness, state sync, safe token handling.",
-              "Shipped as a real product-use case — built for someone, not just a demo.",
+              "Implemented device pairing logic to synchronise dual IoT lamps via the LIFX API.",
+              "Built real-time remote light control functionality across devices with colour and brightness controls.",
+              "Developed secure API request handling for multi-device state management.",
             ],
-            tech: ["React Native", "Expo", "Node/Backend", "APIs", "Railway"],
+            tech: ["React Native", "Expo", "Node.js", "LIFX API", "Railway"],
           },
           {
             id: "schedule-maker",
             title: "Schedule Maker",
-            subtitle: "Roster automation + calendar export",
-            bg: "/explorer/ode.jpg",
+            subtitle: "Roster automation + calendar export · 2026",
+            bg: "/posters/schedule-maker.png",
             badge: "Project",
             highlights: [
-              "Automated roster parsing from PDFs into structured shifts.",
-              "Focused on reliability: edge cases, formatting differences, export-ready output.",
-              "Product thinking: saves time weekly, reduces manual errors.",
+              "Automated roster parsing from PDFs into structured weekly shifts.",
+              "Focused on reliability: handles edge cases, formatting differences, and export-ready output.",
+              "Saves real time weekly — built for actual use, not just a demo.",
             ],
-            tech: ["Next.js", "Parsing", "TypeScript", "ICS export"],
+            tech: ["Next.js", "TypeScript", "PDF Parsing", "ICS Export"],
+            links: [
+              { label: "Live", href: "https://schedule-maker-five.vercel.app" },
+            ],
+          },
+          {
+            id: "application-tracker",
+            title: "Application Tracker",
+            subtitle: "Job application management · 2023",
+            bg: "/posters/application-tracker.png",
+            badge: "Project",
+            highlights: [
+              "Built a personal tool to track job applications, statuses, and follow-ups in one place.",
+              "Designed a clean, minimal UI focused on fast data entry and easy scanning.",
+              "Solved a real pain point from the job hunt — built and used personally.",
+            ],
+            tech: ["React", "TypeScript", "Tailwind"],
+            links: [
+              { label: "Live", href: "https://application-tracker-self.vercel.app" },
+            ],
+          },
+          {
+            id: "hoobank",
+            title: "Frontend Bank Website",
+            subtitle: "UI landing page · 2023",
+            bg: "/posters/hoobank.png",
+            badge: "Project",
+            highlights: [
+              "Built a polished fintech-style landing page focused on component structure and visual design.",
+              "Practised clean layout systems, responsive design, and reusable section components.",
+              "One of the early projects that sharpened frontend fundamentals.",
+            ],
+            tech: ["React", "Tailwind CSS", "Vite"],
+            links: [
+              { label: "Live", href: "https://itsmanavkumar.github.io/Hoobank/" },
+            ],
+          },
+          {
+            id: "weather-app",
+            title: "Weather App",
+            subtitle: "Live weather lookup · 2023",
+            bg: "/posters/weather.png",
+            badge: "Project",
+            highlights: [
+              "Fetches real-time weather data from a public API by city name.",
+              "Displays temperature, conditions, and location with a clean minimal UI.",
+              "One of the first projects involving live API integration and async data handling.",
+            ],
+            tech: ["JavaScript", "OpenWeather API", "HTML & CSS"],
+            links: [
+              { label: "Live", href: "https://itsmanavkumar.github.io/WeatherApp/" },
+            ],
           },
           {
             id: "netflix-portfolio",
             title: "Netflix Portfolio",
-            subtitle: "Recruiter-first UI experience",
-            bg: "/backdrops/IMG_2325.JPG",
+            subtitle: "Recruiter-first UI experience · 2026",
+            bg: "/posters/netflix-portfolio.png",
             badge: "Project",
             highlights: [
-              "Designed a recruiter-first portfolio with a familiar browsing metaphor.",
-              "Built reusable UI shelves, hover states, and responsive layouts.",
-              "Prioritized clarity: fast scanning + deeper drill-down when clicked.",
+              "Designed a recruiter-first portfolio with a familiar Netflix browsing metaphor.",
+              "Built reusable UI shelves, hover states, page transitions, and responsive layouts.",
+              "Prioritised clarity: fast scanning at a glance with deeper drill-down when clicked.",
             ],
-            tech: ["Next.js", "Tailwind", "UI Systems"],
+            tech: ["Next.js", "TypeScript", "Tailwind", "Framer Motion"],
           },
         ],
       },
@@ -149,7 +204,6 @@ export default function ExperiencePage() {
   const activeIdRef = useRef<string | null>(null);
 
   function openInline(item: ExperienceItem, shelfTitle: string) {
-    // IMPORTANT: if a panel is open and you click another card, we should switch
     setActive(item);
     setActiveShelf(shelfTitle);
 
@@ -164,12 +218,10 @@ export default function ExperiencePage() {
     setActiveShelf(null);
   }
 
-  // keep a ref to the currently open card id so outside-click handler doesn't use stale state
   useEffect(() => {
     activeIdRef.current = active ? active.id : null;
   }, [active]);
 
-  // Esc to close
   useEffect(() => {
     function onKeyDown(e: KeyboardEvent) {
       if (e.key === "Escape") closeInline();
@@ -178,21 +230,14 @@ export default function ExperiencePage() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, []);
 
-  // Click outside panel closes it — BUT allow clicking another card to switch
   useEffect(() => {
     if (!active) return;
 
     function onPointerDown(e: PointerEvent) {
       const target = e.target as Node;
-
-      // If user clicked a card button, do NOT close here (the button's onClick will switch)
       const el = target instanceof Element ? target : null;
       if (el?.closest?.("[data-exp-card='true']")) return;
-
-      // If click was inside expanded panel, do nothing
       if (panelRef.current?.contains(target)) return;
-
-      // Otherwise close
       closeInline();
     }
 
@@ -231,7 +276,6 @@ export default function ExperiencePage() {
             </span>
           </h2>
 
-          {/* Shelf row (match Recruiter page behaviour) */}
           <div className="-mx-2 px-2 pt-2 flex gap-6 overflow-x-auto pb-2">
             {shelf.items.map((item) => {
               const isOpen =
@@ -261,26 +305,21 @@ export default function ExperiencePage() {
                     isOpen ? "border-red-600/70" : "",
                   ].join(" ")}
                 >
-                  {/* Outer glow (outside the box, not tinting the whole card) */}
-                  <div
-                    className="
-                      pointer-events-none absolute -inset-[6px]
-                      opacity-50 group-hover:opacity-100
-                      transition-opacity duration-300
-                      blur-[10px]
-                      bg-linear-to-r from-red-600/55 via-red-400/25 to-red-600/55
-                    "
-                  />
+                  <div className="
+                    pointer-events-none absolute -inset-[6px]
+                    opacity-50 group-hover:opacity-100
+                    transition-opacity duration-300
+                    blur-[10px]
+                    bg-linear-to-r from-red-600/55 via-red-400/25 to-red-600/55
+                  " />
 
-                  {/* Background image */}
                   {item.bg ? (
                     <img
                       src={item.bg}
                       alt=""
                       className="
                         pointer-events-none absolute inset-0 h-full w-full object-cover
-                        opacity-80
-                        transition duration-300
+                        opacity-80 transition duration-300
                         group-hover:opacity-95 group-hover:scale-[1.03]
                       "
                     />
@@ -288,24 +327,18 @@ export default function ExperiencePage() {
                     <div className="absolute inset-0 bg-neutral-800" />
                   )}
 
-                  {/* Dark gradient for legibility */}
-                  <div
-                    className="
-                      pointer-events-none absolute inset-0
-                      bg-linear-to-t from-black/60 via-black/20 to-transparent
-                      opacity-70 group-hover:opacity-90
-                      transition duration-300
-                    "
-                  />
+                  <div className="
+                    pointer-events-none absolute inset-0
+                    bg-linear-to-t from-black/60 via-black/20 to-transparent
+                    opacity-70 group-hover:opacity-90 transition duration-300
+                  " />
 
-                  {/* Badge */}
                   {item.badge ? (
                     <span className="absolute left-3 top-3 z-10 rounded-full border border-white/10 bg-black/50 px-2 py-1 text-[11px] text-white/80">
                       {item.badge}
                     </span>
                   ) : null}
 
-                  {/* Text */}
                   <div className="relative z-10 flex h-full w-full flex-col justify-end p-4 text-left">
                     <div className="text-xl font-semibold tracking-tight">
                       {item.title}
@@ -321,7 +354,6 @@ export default function ExperiencePage() {
             })}
           </div>
 
-          {/* Inline expanded panel (anchored to this shelf) */}
           <div id={`expand-${shelf.title}`} className="scroll-mt-28">
             {active && activeShelf === shelf.title ? (
               <div
@@ -332,7 +364,6 @@ export default function ExperiencePage() {
                   shadow-[0_0_0_1px_rgba(255,255,255,0.06),0_20px_60px_-25px_rgba(0,0,0,0.9)]
                 "
               >
-                {/* Top image */}
                 <div className="relative h-[180px] sm:h-[220px]">
                   {active.bg ? (
                     <img
@@ -395,7 +426,6 @@ export default function ExperiencePage() {
                   </div>
                 </div>
 
-                {/* Body (scrollable inside) */}
                 <div className="max-h-[340px] overflow-y-auto overscroll-auto p-5 sm:p-6">
                   <h4 className="text-lg font-semibold">What I did</h4>
 
@@ -410,9 +440,7 @@ export default function ExperiencePage() {
 
                   {active.tech?.length ? (
                     <>
-                      <h4 className="mt-6 text-lg font-semibold">
-                        Tech / Skills
-                      </h4>
+                      <h4 className="mt-6 text-lg font-semibold">Tech / Skills</h4>
                       <div className="mt-3 flex flex-wrap gap-2">
                         {active.tech.map((t) => (
                           <span
