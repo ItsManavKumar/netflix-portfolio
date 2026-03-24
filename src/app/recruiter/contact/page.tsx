@@ -49,7 +49,7 @@ export default function ContactPage() {
         <div className="text-xs sm:text-sm text-white/70">
           <span className="hidden sm:inline">•</span>{" "}
           <span className="block sm:inline">
-            Frontend / Full-stack • Sydney / Melbourne • Open to interview
+             Full-stack / Data Analyst • Sydney / Melbourne • Open to interview
           </span>
         </div>
 
@@ -97,7 +97,7 @@ export default function ContactPage() {
           </a>
 
           <a
-            href="../resume/resume-manav_kumar.pdf"
+            href="../resume/Manav_Kumar_SoftwareDeveloper_CV.pdf"
             target ="_blank"
             className="
               inline-flex items-center justify-center gap-2 rounded
@@ -120,15 +120,6 @@ export default function ContactPage() {
           >
             ＋ GitHub
           </a>
-        </div>
-
-        {/* Quick facts: more readable on mobile */}
-        <div className="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2 sm:gap-x-6 sm:gap-y-2 text-sm text-white/70">
-          <span>Stack: Next.js • React • TypeScript • Tailwind</span>
-          <span>Strengths: UI Systems • Auth • API Integration</span>
-          <span className="sm:col-span-2">
-            Work rights: Graduate visa (valid to 2027)
-          </span>
         </div>
       </div>
     </div>

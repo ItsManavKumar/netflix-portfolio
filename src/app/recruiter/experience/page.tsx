@@ -85,6 +85,24 @@ export default function ExperiencePage() {
         title: "Projects",
         items: [
           {
+            id: "AnalyzeBets",
+            title: "AnalyzeBets",
+            subtitle: "Odds analysis dashboard · 2024",
+            bg: "/posters/analyzebets.png",
+            badge: "Project",
+            highlights: [
+              "Designed and built a fully deployed data product ingesting real-time odds from 11+ bookmakers across 6 sports every hour via automated Vercel cron jobs",
+              "Engineered a PostgreSQL schema for time-series storage; refactored batch inserts via Prisma createMany() reducing save time from ~2 minutes to under 5 seconds",
+              " Built RESTful API routes in Next.js separating data ingestion, storage, and presentation — mirroring microservices architecture principles.",
+              "Rendered time-series line movement charts via Recharts, visualising bookmaker price shifts 24–72 hours before kick-off."
+            ],
+            tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma ORM", "Vercel", "Odds API", "Recharts", "Railway"],
+            links: [
+              { label: "Live", href: "https://odds-dashboard-iota.vercel.app" },
+              { label: "GitHub", href: "https://github.com/ItsManavKumar/odds_dashboard" },
+            ],
+          },
+          {
             id: "devto",
             title: "Dev.to Clone",
             subtitle: "Full-stack blogging platform · 2024",

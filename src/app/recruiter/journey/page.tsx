@@ -55,16 +55,16 @@ const journey: JourneyItem[] = [
       "Ranked within the top 10% in Australia by designing a reward function for an RL model on Amazon SageMaker.",
     side: "left",
   },
-//   {
-//     id: "projects",
-//     year: "Sept 2023 – Oct 2023",
-//     title: "Projects — Hoo Bank App + AI Calendar App (Frontend)",
-//     subtitle: "UI builds + scheduling flow foundations",
-//     description:
-//       "Built a personal finance landing UI (Hoo Bank) and established frontend for an AI calendar app with calendar integration direction.",
-//     side: "right",
-//   },
-{
+  //   {
+  //     id: "projects",
+  //     year: "Sept 2023 – Oct 2023",
+  //     title: "Projects — Hoo Bank App + AI Calendar App (Frontend)",
+  //     subtitle: "UI builds + scheduling flow foundations",
+  //     description:
+  //       "Built a personal finance landing UI (Hoo Bank) and established frontend for an AI calendar app with calendar integration direction.",
+  //     side: "right",
+  //   },
+  {
     id: "optus",
     year: "2024–Now",
     title: "Optus — Retail Associate",
@@ -74,33 +74,41 @@ const journey: JourneyItem[] = [
     side: "right",
   },
   {
-  id: "webto",
-  year: "2025",
-  title: "Web.to — Dev.to Style Blogging Platform",
-  subtitle: "Full-stack product build (Next.js)",
-  description:
-    "Built a Dev.to-style blogging platform with authentication, user profiles, infinite scrolling, and a clean, production-ready UI using Next.js and modern tooling.",
-  side: "left",
-},
-{
-  id: "lamp",
-  year: "2025",
-  title: "Long-Distance IoT Project",
-  subtitle: "Real-time APIs + emotional UX",
-  description:
-    "Designed and built an IoT-powered lamp that syncs color and brightness between users in real time, focusing on reliability, UX, and meaningful interaction.",
-  side: "right",
-},
-{
-  id: "netflix-portfolio",
-  year: "2026",
-  title: "Netflix-Style Portfolio",
-  subtitle: "Recruiter-first UX + product storytelling",
-  description:
-    "Built a Netflix-inspired portfolio to reduce recruiter friction and present projects like a product experience rather than a traditional portfolio.",
-  side: "left",
-},
-
+    id: "webto",
+    year: "2025",
+    title: "Web.to — Dev.to Style Blogging Platform",
+    subtitle: "Full-stack product build (Next.js)",
+    description:
+      "Built a Dev.to-style blogging platform with authentication, user profiles, infinite scrolling, and a clean, production-ready UI using Next.js and modern tooling.",
+    side: "left",
+  },
+  {
+    id: "lamp",
+    year: "2025",
+    title: "Long-Distance IoT Project",
+    subtitle: "Real-time APIs + emotional UX",
+    description:
+      "Designed and built an IoT-powered lamp that syncs color and brightness between users in real time, focusing on reliability, UX, and meaningful interaction.",
+    side: "right",
+  },
+  {
+    id: "netflix-portfolio",
+    year: "2026",
+    title: "Netflix-Style Portfolio",
+    subtitle: "Recruiter-first UX + product storytelling",
+    description:
+      "Built a Netflix-inspired portfolio to reduce recruiter friction and present projects like a product experience rather than a traditional portfolio.",
+    side: "left",
+  },
+  {
+    id: "AnalyzeBets",
+    year: "2026",
+    title: "AnalyzeBets",
+    subtitle: "Data Analysis + Betting Insights",
+    description:
+      "Built a full-stack sports odds dashboard using Next.js 16, TypeScript, and Tailwind CSS. Aggregates live betting odds across 6 leagues (AFL, NRL, EPL, La Liga, Serie A, UCL) from multiple bookmakers via the Odds API, stores historical snapshots in a database, and visualises line movement over time using Recharts. Features include best-value bookmaker detection, real-time odds age tracking, and a fully responsive mobile UI.",
+    side: "right",
+  },
 ];
 
 export default function JourneyPage() {
@@ -118,7 +126,8 @@ export default function JourneyPage() {
           </h1>
 
           <p className="mx-auto mt-4 max-w-2xl text-center text-white/70 text-sm sm:text-base leading-relaxed">
-            A timeline of how I grew from engineering foundations → real-world delivery → recruiter-first projects.
+            A timeline of how I grew from engineering foundations → real-world
+            delivery → recruiter-first projects.
           </p>
 
           <div className="relative mt-14">
@@ -147,7 +156,9 @@ export default function JourneyPage() {
                   <div
                     className={[
                       "grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-start",
-                      item.side === "left" ? "" : "md:[&>div:first-child]:order-2",
+                      item.side === "left"
+                        ? ""
+                        : "md:[&>div:first-child]:order-2",
                     ].join(" ")}
                   >
                     {/* spacer column for symmetry on desktop */}
@@ -161,26 +172,26 @@ export default function JourneyPage() {
                       ].join(" ")}
                     >
                       <div
-  className="
+                        className="
     group relative
     transition duration-200 ease-out
     hover:scale-[1.02]
   "
->
-  {/* ✅ Outer glow (same as Skills) */}
-  <div
-    className="
+                      >
+                        {/* ✅ Outer glow (same as Skills) */}
+                        <div
+                          className="
       pointer-events-none absolute -inset-1.5
       opacity-60 group-hover:opacity-100
       transition-opacity duration-300
       blur-[10px]
       bg-linear-to-r from-red-600/55 via-red-400/25 to-red-600/55
     "
-  />
+                        />
 
-  {/* ✅ Card (same vibe as Skills) */}
-  <div
-    className="
+                        {/* ✅ Card (same vibe as Skills) */}
+                        <div
+                          className="
       relative rounded-lg
       border border-white/10
       bg-linear-to-b from-neutral-800 to-neutral-900
@@ -190,33 +201,32 @@ export default function JourneyPage() {
       group-hover:shadow-[0_0_0_1px_rgba(229,9,20,0.25),0_16px_40px_-18px_rgba(229,9,20,0.55)]
       overflow-hidden
     "
-  >
-    {/* inner dark overlay (same as Skills) */}
-    <div className="absolute inset-0 bg-linear-to-t from-black/35 to-transparent opacity-50 group-hover:opacity-100 transition" />
+                        >
+                          {/* inner dark overlay (same as Skills) */}
+                          <div className="absolute inset-0 bg-linear-to-t from-black/35 to-transparent opacity-50 group-hover:opacity-100 transition" />
 
-    {/* content */}
-    <div className="relative z-10">
-      <div className="text-xs uppercase tracking-widest text-white/50">
-        {item.year}
-      </div>
+                          {/* content */}
+                          <div className="relative z-10">
+                            <div className="text-xs uppercase tracking-widest text-white/50">
+                              {item.year}
+                            </div>
 
-      <h2 className="mt-2 text-xl font-semibold">
-        {item.title}
-      </h2>
+                            <h2 className="mt-2 text-xl font-semibold">
+                              {item.title}
+                            </h2>
 
-      {item.subtitle ? (
-        <div className="mt-1 text-sm text-white/70">
-          {item.subtitle}
-        </div>
-      ) : null}
+                            {item.subtitle ? (
+                              <div className="mt-1 text-sm text-white/70">
+                                {item.subtitle}
+                              </div>
+                            ) : null}
 
-      <p className="mt-4 text-sm leading-relaxed text-white/75">
-        {item.description}
-      </p>
-    </div>
-  </div>
-</div>
-
+                            <p className="mt-4 text-sm leading-relaxed text-white/75">
+                              {item.description}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
 
@@ -230,7 +240,8 @@ export default function JourneyPage() {
           </div>
 
           <div className="mt-16 text-center text-white/70 text-sm">
-            Want the details? Jump to <span className="text-white">Experience</span> or{" "}
+            Want the details? Jump to{" "}
+            <span className="text-white">Experience</span> or{" "}
             <span className="text-white">Projects</span>.
           </div>
         </div>
