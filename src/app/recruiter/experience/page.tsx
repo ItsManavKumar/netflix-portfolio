@@ -88,7 +88,7 @@ export default function ExperiencePage() {
             id: "AnalyzeBets",
             title: "AnalyzeBets",
             subtitle: "Odds analysis dashboard · 2024",
-            bg: "/posters/analyzebets.png",
+            bg: "/posters/AnalyzeBets.png",
             badge: "Project",
             highlights: [
               "Designed and built a fully deployed data product ingesting real-time odds from 11+ bookmakers across 6 sports every hour via automated Vercel cron jobs",
