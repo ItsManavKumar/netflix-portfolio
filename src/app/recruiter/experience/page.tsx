@@ -27,19 +27,6 @@ export default function ExperiencePage() {
         title: "Professional Experience",
         items: [
           {
-            id: "colossal-bet",
-            title: "Colossal Bet",
-            subtitle: "Data Analyst Intern · May 2025 – Oct 2025",
-            bg: "/posters/colossal.jpg",
-            badge: "Internship",
-            highlights: [
-              "Developed and maintained 10+ SQL scripts to automate daily betting transaction reports, reducing manual processing time by ~4 hours per week.",
-              "Built 2 interactive Tableau dashboards to track weekly wagering KPIs, enabling clear visibility into user activity across thousands of daily bets.",
-              "Performed user segmentation analysis to classify active vs inactive bettors, supporting targeted email campaigns to re-engage lapsed users.",
-            ],
-            tech: ["SQL", "Tableau", "Data Analysis", "User Segmentation", "KPI Dashboards"],
-          },
-          {
             id: "evaheld",
             title: "Evaheld",
             subtitle: "Software Engineering Intern · Nov 2022 – Apr 2023",
@@ -64,7 +51,11 @@ export default function ExperiencePage() {
               "Maintained 95% monthly NPS and 90% 12-month average, resolving customer issues efficiently.",
               "Troubleshot NBN, mobile, 5G, and device connectivity issues in a high-pressure retail environment.",
             ],
-            tech: ["Customer Communication", "KPI-driven Delivery", "Troubleshooting"],
+            tech: [
+              "Customer Communication",
+              "KPI-driven Delivery",
+              "Troubleshooting",
+            ],
           },
           {
             id: "uts",
@@ -77,7 +68,12 @@ export default function ExperiencePage() {
               "Shipped multiple frontend and data-focused projects in structured team environments.",
               "Developed systems thinking around building maintainable, scalable software.",
             ],
-            tech: ["Software Engineering", "Data Analytics", "Git", "Team Projects"],
+            tech: [
+              "Software Engineering",
+              "Data Analytics",
+              "Git",
+              "Team Projects",
+            ],
           },
         ],
       },
@@ -85,21 +81,103 @@ export default function ExperiencePage() {
         title: "Projects",
         items: [
           {
+            id: "docs-rag-lakehouse",
+            title: "RAG Lakehouse",
+            subtitle: "RAG pipeline on Databricks · 2026",
+            bg: "/posters/docs-rag-lakehouse.png",
+            badge: "Project",
+            highlights: [
+              "Built a retrieval-augmented generation pipeline over public DuluxGroup product data sheets, answering natural-language questions with source citations.",
+              "Structured ingestion as a medallion architecture (Bronze → Silver → Gold) on Delta tables, using PySpark to parse, clean, and chunk documents.",
+              "Generated embeddings and indexed them in FAISS for fast semantic retrieval of the most relevant passages.",
+              "Used Claude Sonnet to generate grounded answers that cite the exact data sheets they came from, keeping responses traceable to source.",
+            ],
+            tech: [
+              "Databricks",
+              "PySpark",
+              "Delta Lake",
+              "Python",
+              "FAISS",
+              "Embeddings",
+              "Claude API",
+              "RAG",
+            ],
+            links: [
+              {
+                label: "GitHub",
+                href: "https://github.com/ItsManavKumar/docs-rag-lakehouse",
+              },
+            ],
+          },
+          {
+            id: "omni",
+            title: "Omni",
+            subtitle: "AI assistant over a relational data grid · 2026",
+            bg: "/posters/omni.png",
+            badge: "Project",
+            highlights: [
+              "Built a natural-language interface to a PostgreSQL dataset, using LLM tool-calling so the model queries the database directly instead of guessing from context.",
+              "Streamed model responses into an interactive data grid, so results render progressively rather than blocking on the full completion.",
+              "Cut a slow aggregate query from 5,529ms to 341ms after profiling with EXPLAIN ANALYZE and reworking indexes and query structure.",
+              "Containerised the local environment with Docker Compose (app + Postgres) for reproducible setup.",
+            ],
+            tech: [
+              "Next.js",
+              "TypeScript",
+              "tRPC",
+              "Prisma",
+              "PostgreSQL",
+              "Vercel AI SDK",
+              "Docker Compose",
+            ],
+          },
+          {
+            id: "tiptaptoe",
+            title: "TipTapToe",
+            subtitle: "macOS tap-zone controller · 2026",
+            bg: "/posters/tiptaptoe.png",
+            badge: "In Progress",
+            highlights: [
+              "Building an open-source macOS app that turns the desk and chassis around a MacBook into tap-triggered shortcuts, using no extra hardware.",
+              "Detects taps with the Mac's built-in accelerometer and gyroscope, matching incoming motion against recorded tap signatures rather than a simple loudness threshold.",
+              "Classifies four zones (desk-left, desk-right, chassis-left, chassis-right) with single and double-tap patterns, each mapped to actions like play/pause and screenshot.",
+              "Iterated on zone design through real-world testing, dropping an unreliable four-quadrant layout for zones that classify consistently.",
+            ],
+            tech: [
+              "macOS",
+              "Motion Sensors",
+              "Signal Processing",
+              "Gesture Recognition",
+            ],
+          },
+          {
             id: "AnalyzeBets",
             title: "AnalyzeBets",
-            subtitle: "Odds analysis dashboard · 2024",
+            subtitle: "Odds analysis dashboard · 2026",
             bg: "/posters/AnalyzeBets.png",
             badge: "Project",
             highlights: [
               "Designed and built a fully deployed data product ingesting real-time odds from 11+ bookmakers across 6 sports every hour via automated Vercel cron jobs",
               "Engineered a PostgreSQL schema for time-series storage; refactored batch inserts via Prisma createMany() reducing save time from ~2 minutes to under 5 seconds",
               " Built RESTful API routes in Next.js separating data ingestion, storage, and presentation — mirroring microservices architecture principles.",
-              "Rendered time-series line movement charts via Recharts, visualising bookmaker price shifts 24–72 hours before kick-off."
+              "Rendered time-series line movement charts via Recharts, visualising bookmaker price shifts 24–72 hours before kick-off.",
             ],
-            tech: ["Next.js", "TypeScript", "PostgreSQL", "Prisma ORM", "Vercel", "Odds API", "Recharts", "Railway"],
+            tech: [
+              "Next.js",
+              "TypeScript",
+              "PostgreSQL",
+              "Prisma ORM",
+              "Vercel",
+              "Odds API",
+              "Recharts",
+              "Railway",
+            ],
             links: [
               { label: "Live", href: "https://odds-dashboard-iota.vercel.app" },
-              { label: "GitHub", href: "https://github.com/ItsManavKumar/odds_dashboard" },
+              {
+                label: "GitHub",
+                href: "https://github.com/ItsManavKumar/odds_dashboard",
+              },
             ],
           },
           {
@@ -113,10 +191,25 @@ export default function ExperiencePage() {
               "Designed a relational PostgreSQL schema and implemented secure data operations using Prisma.",
               "Implemented infinite scroll feed and caching to reduce repeat loading and improve UX speed.",
             ],
-            tech: ["Next.js", "TypeScript", "Tailwind", "React Query", "NextAuth", "Prisma", "PostgreSQL", "Vercel"],
+            tech: [
+              "Next.js",
+              "TypeScript",
+              "Tailwind",
+              "React Query",
+              "NextAuth",
+              "Prisma",
+              "PostgreSQL",
+              "Vercel",
+            ],
             links: [
-              { label: "Live", href: "https://blog-project-tau-eight.vercel.app" },
-              { label: "GitHub", href: "https://github.com/ItsManavKumar/blog_project" },
+              {
+                label: "Live",
+                href: "https://blog-project-tau-eight.vercel.app",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/ItsManavKumar/blog_project",
+              },
             ],
           },
           {
@@ -161,7 +254,10 @@ export default function ExperiencePage() {
             ],
             tech: ["React", "TypeScript", "Tailwind"],
             links: [
-              { label: "Live", href: "https://application-tracker-self.vercel.app" },
+              {
+                label: "Live",
+                href: "https://application-tracker-self.vercel.app",
+              },
             ],
           },
           {
@@ -177,7 +273,10 @@ export default function ExperiencePage() {
             ],
             tech: ["React", "Tailwind CSS", "Vite"],
             links: [
-              { label: "Live", href: "https://itsmanavkumar.github.io/Hoobank/" },
+              {
+                label: "Live",
+                href: "https://itsmanavkumar.github.io/Hoobank/",
+              },
             ],
           },
           {
@@ -193,7 +292,10 @@ export default function ExperiencePage() {
             ],
             tech: ["JavaScript", "OpenWeather API", "HTML & CSS"],
             links: [
-              { label: "Live", href: "https://itsmanavkumar.github.io/WeatherApp/" },
+              {
+                label: "Live",
+                href: "https://itsmanavkumar.github.io/WeatherApp/",
+              },
             ],
           },
           {
@@ -212,7 +314,7 @@ export default function ExperiencePage() {
         ],
       },
     ],
-    []
+    [],
   );
 
   const [active, setActive] = useState<ExperienceItem | null>(null);
@@ -323,13 +425,15 @@ export default function ExperiencePage() {
                     isOpen ? "border-red-600/70" : "",
                   ].join(" ")}
                 >
-                  <div className="
+                  <div
+                    className="
                     pointer-events-none absolute -inset-[6px]
                     opacity-50 group-hover:opacity-100
                     transition-opacity duration-300
                     blur-[10px]
                     bg-linear-to-r from-red-600/55 via-red-400/25 to-red-600/55
-                  " />
+                  "
+                  />
 
                   {item.bg ? (
                     <img
@@ -345,11 +449,13 @@ export default function ExperiencePage() {
                     <div className="absolute inset-0 bg-neutral-800" />
                   )}
 
-                  <div className="
+                  <div
+                    className="
                     pointer-events-none absolute inset-0
                     bg-linear-to-t from-black/60 via-black/20 to-transparent
                     opacity-70 group-hover:opacity-90 transition duration-300
-                  " />
+                  "
+                  />
 
                   {item.badge ? (
                     <span className="absolute left-3 top-3 z-10 rounded-full border border-white/10 bg-black/50 px-2 py-1 text-[11px] text-white/80">
@@ -458,7 +564,9 @@ export default function ExperiencePage() {
 
                   {active.tech?.length ? (
                     <>
-                      <h4 className="mt-6 text-lg font-semibold">Tech / Skills</h4>
+                      <h4 className="mt-6 text-lg font-semibold">
+                        Tech / Skills
+                      </h4>
                       <div className="mt-3 flex flex-wrap gap-2">
                         {active.tech.map((t) => (
                           <span

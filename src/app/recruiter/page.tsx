@@ -38,6 +38,25 @@ const recruiterShelves: { title: string; items: ShelfItem[] }[] = [
   {
     title: "Continue Watching for Recruiters",
     items: [
+            {
+        label: "Docs RAG Lakehouse",
+        href: "https://github.com/ItsManavKumar/docs-rag-lakehouse",
+        bg: "/posters/docs-rag-lakehouse.png",
+        date: "2026",
+        external: true,
+      },
+      {
+        label: "Omni",
+        href: "/recruiter/experience",
+        bg: "/posters/omni.png",
+        date: "2026",
+      },
+      {
+        label: "TipTapToe",
+        href: "/recruiter/experience",
+        bg: "/posters/tiptaptoe.png",
+        date: "2026",
+      },
       {
         label: "AnalyzeBets",
         href: "https://odds-dashboard-iota.vercel.app/",
